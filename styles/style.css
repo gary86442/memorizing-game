@@ -1,0 +1,110 @@
+.completed {
+  position: absolute;
+  top: 33vh;
+  z-index: 999;
+  background: RGBA(232, 246, 254, 0.8);
+  width: 100vw;
+  padding: 3rem 0;
+  text-align: center;
+}
+.completed p {
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+.completed p:first-child {
+  font-size: 3em;
+  font-weight: 700;
+  color: #758d9a;
+}
+.completed button {
+  background-color: gray;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem;
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: flex-end;
+  width: 85%;
+}
+#header div.title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#header div.title img {
+  width: 3rem;
+}
+#header div.title h2 {
+  margin-left: 0.5rem;
+}
+#header h2.score {
+  margin: 3px;
+  color: #6c90ac;
+}
+#header p.tried {
+  margin-top: 0;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+}
+#cards .back {
+  background: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png");
+  background-size: cover;
+}
+#cards .paired {
+  background-color: #dae0e3;
+}
+#cards .wrong {
+  -webkit-animation: 0.2s wrongAnimation;
+          animation: 0.2s wrongAnimation;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+}
+#cards .card {
+  box-sizing: border-box;
+  flex: 7% 1 1;
+  height: 8vw;
+  border: 2px solid #e0e0e0;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#cards .card img {
+  max-width: 30%;
+  align-self: center;
+}
+#cards .card p {
+  margin: 2px;
+  font-size: 1.25rem;
+}
+#cards .card p:last-child {
+  transform: rotate(180deg);
+}
+
+@-webkit-keyframes wrongAnimation {
+  to {
+    border: 2px solid #ffd54f;
+  }
+}
+
+@keyframes wrongAnimation {
+  to {
+    border: 2px solid #ffd54f;
+  }
+}/*# sourceMappingURL=style.css.map */
